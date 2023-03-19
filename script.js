@@ -78,7 +78,7 @@ if (phrase === null || phrase === '') {
       let symbolArray = symbol.split('');
       let removeSymbols = function(phrase, symbolArray) {   
          phraseArray = phraseArray.filter(elem => !symbolArray.includes(elem));
-         phrase = phraseArray.join(' ');
+         phrase = phraseArray.join('');
          return phrase;
       };
       alert(removeSymbols(phrase, symbolArray));
